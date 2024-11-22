@@ -8,7 +8,7 @@ def place_robot():
     global robot_x, robot_y, robot_shape
     robot_x = randint(0, 63)
     robot_y = randint(0, 47)
-    robot_shape = Box((10 * robot_x + 5, 10 * robot_y + 5), 10, 10, filled=False)
+    robot_shape = Box((10 * robot_x, 10 * robot_y), 10, 10, filled=False)
 def place_player():
     global player_x, player_y, player_shape
     player_x = randint(0, 63)
@@ -61,21 +61,23 @@ def move_player():
         player_x += 3
     move_to(player_shape, (10 * player_x + 5, 10 * player_y+5))
 
-#Ftext = Text("hello", (320, 240), size=48)
-#while True:
-    #Ftext = Text("hello", (320, 240), size=48)
-    #text = update_when('key_pressed')
-    #remove_from_screen(Ftext)
-    #text = Text(text, (320, 240), size=48)
-    #if text  == 'q':
-        #break
-
+def move_robot():
+    global robot_x, robot_y, robot_shape
+    if robot_x < player_x:
+        robot_x += 1
+    elif robot_x > player_x:
+        robot_x -= 1
+    if robot_y < player_y:
+        robot_y += 1
+    elif robot_y > player_y:
+        robot_y -= 1
+    move_to(robot_shape, (10 * robot_x, 10 * robot_y))
 #test here       
 place_player()
 place_robot()
 c = Circle((320, 200), 5)
 move_to(c, (300, 220))
-move_player()
 while not finished:
     move_player()
+    move_robot()
 end_graphics()   
