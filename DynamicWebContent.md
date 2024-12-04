@@ -30,4 +30,11 @@ Accurate Hacking in the Movies
 - Die Hard 4
 - ...
 
+Video 3:
+- Network Sockets are like phone calls for pairs of applications
+TCP Connection/Sockets
+- In computer networking, an internet socket or network socket is an endpoint of a bidirectional inter-process communication flow across an Interent Protocol-based computer newtwork, such as the Internet."
+APPLICATION PROCESS --> INTERNET --> APPLICATION PROCESS
+- All computers have IP address, there are two kinds which are ipv4 and ipv6
+- TCP port numbers are like phone call extention
 '''
