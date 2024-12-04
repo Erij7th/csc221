@@ -51,4 +51,7 @@ Video 5:
 - Accept and Handle Connection explaination: The server runs in an infinite loop, constantly accepting new connections. For each connection, it enters another loop to recieve and send data until the client disconnects(if not data: break). 
 After communication is done, it closes the connection(close()) and waits for thenext client.
 
+Video 6:
+- Browser Developer Mode is like a set of special tools that let you look under the hood of a website. It allows you to see and change the HTML, CSS and JavaScript code that makes up a webpage. You can also check how the website performs, find errors, and test how it looks on different devices. 
+- In a Mac, to access a web developer, go to View on top left and selection develop then JavaScript. 
 '''
