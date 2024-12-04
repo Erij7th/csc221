@@ -43,6 +43,12 @@ Creating Socket:
 - Import Socket Module - this is like getting your tools ready. I need to use Python's socket module to create a socket.
 - Making a socket is like making a new phone, first you choose the type of socket, meaning IP address and TCP
 - Input value in the AF_INET for internet(IPV4 addresses) and SOCK_STREAM for TCP
+- Reciving and sending are parts of socket system
 
-  
+Video 5:
+- Listen() could be explained as reciving calls
+- Accept() is like blocking if you are already in communication or in a call with a server, it keeps waiting on you because you can not communicate with more than 1 server
+- Accept and Handle Connection explaination: The server runs in an infinite loop, constantly accepting new connections. For each connection, it enters another loop to recieve and send data until the client disconnects(if not data: break). 
+After communication is done, it closes the connection(close()) and waits for thenext client.
+
 '''
