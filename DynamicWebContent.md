@@ -37,4 +37,12 @@ TCP Connection/Sockets
 APPLICATION PROCESS --> INTERNET --> APPLICATION PROCESS
 - All computers have IP address, there are two kinds which are ipv4 and ipv6
 - TCP port numbers are like phone call extention
+
+Video 4:
+Creating Socket:
+- Import Socket Module - this is like getting your tools ready. I need to use Python's socket module to create a socket.
+- Making a socket is like making a new phone, first you choose the type of socket, meaning IP address and TCP
+- Input value in the AF_INET for internet(IPV4 addresses) and SOCK_STREAM for TCP
+
+  
 '''
