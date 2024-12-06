@@ -1,5 +1,5 @@
 '''
-Video 1:
+Notes:
 HTML: 
 - A way of marking up text to indicate that some text is differnt than other text
 - We "tag" portions of the text to communicate meaning 
@@ -23,4 +23,27 @@ Tags rules:
 - Tags must be lower-case
 - Attribures must be enclosed in quotes
 - Tags must be closed
+
+Special File Names
+- When a URL points to a directory in your web server, it looks for a file with a special name:Index.html, index.htm, index.php, etc
+- While there is a convention, the "default file" is configurable - so nothing is "sure"
+- Usually index.htm or index.html is a safe bet
+- This only works when viewing through a web server - when viewing from disk, you must view the file. 
+
+Tags have a beginning and /end
+Less than = &lt;
+Greater than = &gt;
+& = &amp;
+Comment = <!-- blah blah -->
+
+HTML Links 
+- One of the key things about HTML is making a set of pages and making "hypertext" links amongst those pages
+- Links are what make the "web" a "web" - it is a web of interlinked documents.
+-The Interlinked nature of te web leads to the "knowledge" the search engines like Google appear to have "intelligence"
+
+Tables: <tbody>, <th>, <tr>, <td>
+
+image link = src="link"
+sentence link = href="link"
+
 '''
