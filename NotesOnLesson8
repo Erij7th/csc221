@@ -1,0 +1,15 @@
+Dr. Chuck makes a statement about the learning curve for SQL. What exactly does he say?
+In your own words, how would you define Object-relational mapping (ORM)? How will we use it in Django and what specifically will it do?
+What does Dr. Chuck say are the advantages of the ORM? What disadvantages (if any) does it have?
+Dr. Chucks that most (he mentions a percentage) of the things you want to do with SQL can be done effectively with an ORM. What exactly does he say?
+What is the name of the file in which the ORM data objects are defined?
+In the example of an ORM object:
+class User(models.Model):
+    name = models.CharField(max_length=128)
+    email = models.CharField(max_length=128)
+Dr. Chuck draws a line to models.Model and mentions what that is. What does he say? Of which OOP feature is this an example?
+What two commands do you need to run to go from an ORM to deployment in a database?
+What does running python3 manage.py shell do? Be specific!
+In the example session Dr. Chuck talks about, he creates a new user named Kristen with email address kf@umich.edu. Where is this user created when:
+u = User(name='Kristen', email='kf@umich.edu')
+is run? What command needs to be used to add this new user to the database?
