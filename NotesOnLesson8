@@ -1,7 +1,15 @@
 Dr. Chuck makes a statement about the learning curve for SQL. What exactly does he say?
+- 
+
 In your own words, how would you define Object-relational mapping (ORM)? How will we use it in Django and what specifically will it do?
+- 
+
 What does Dr. Chuck say are the advantages of the ORM? What disadvantages (if any) does it have?
+- 
+
 Dr. Chucks that most (he mentions a percentage) of the things you want to do with SQL can be done effectively with an ORM. What exactly does he say?
+- 
+
 What is the name of the file in which the ORM data objects are defined?
 In the example of an ORM object:
 class User(models.Model):
