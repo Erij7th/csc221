@@ -1,23 +1,34 @@
 Dr. Chuck makes a statement about the learning curve for SQL. What exactly does he say?
-- 
+- Dr. Chuck often mentions that learning SQL can be relatively easy for those with programming skills initially, but as you progress to more advanced concepts, it requires more attention and effort to master.
 
 In your own words, how would you define Object-relational mapping (ORM)? How will we use it in Django and what specifically will it do?
-- 
+-Object-Relational Mapping (ORM) in Django allows developers to interact with the database using Python code instead of SQL by mapping database tables to model classes and rows to instances of those classes.
+
 
 What does Dr. Chuck say are the advantages of the ORM? What disadvantages (if any) does it have?
-- 
+-Dr. Chuck highlights that the advantages of using ORM include increased productivity, cleaner code, database agnosticism, and alignment with object-oriented programming paradigms. However, he also mentions potential drawbacks such as performance overheads, a learning curve, limitations in query flexibility, and the need for careful configuration to avoid inefficiencies.
 
 Dr. Chucks that most (he mentions a percentage) of the things you want to do with SQL can be done effectively with an ORM. What exactly does he say?
-- 
+- He mentions that around 80% of common SQL tasks can be effectively managed using an ORM. This simplifies many routine database operations, making development more efficient.
+
 
 What is the name of the file in which the ORM data objects are defined?
+- models.py
+
 In the example of an ORM object:
 class User(models.Model):
     name = models.CharField(max_length=128)
     email = models.CharField(max_length=128)
 Dr. Chuck draws a line to models.Model and mentions what that is. What does he say? Of which OOP feature is this an example?
+- Dr. Chuck explains that models.Model is the base class for all Django models, and the User class inherits from it. This is an example of inheritance, an OOP feature where a new class derives from an existing class to reuse and extend functionality.
+
 What two commands do you need to run to go from an ORM to deployment in a database?
+-Generate migration scripts based on your ORM models and then apply these migrations to update your database schema. 
+
 What does running python3 manage.py shell do? Be specific!
+- Running python3 manage.py shell in a Django project starts an interactive Python shell that is pre-configured with your Django project's settings and environment. This allows you to interact with your project's models, query the database, and execute Python code within the context of your Django application, making it a powerful tool for debugging and testing.
+
 In the example session Dr. Chuck talks about, he creates a new user named Kristen with email address kf@umich.edu. Where is this user created when:
 u = User(name='Kristen', email='kf@umich.edu')
 is run? What command needs to be used to add this new user to the database?
+- u.save() is using to save the new user to the database. 
